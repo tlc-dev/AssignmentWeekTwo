@@ -13,27 +13,32 @@ public class Loops {
 				System.out.println(countEven);
 			}
 		}
+		System.out.println("");
 		
 		//while loop that prints every 3rd number going backwards from 100 to 0
 		System.out.println("SECOND LOOP");
 		
 		int countThirds = 100;
-		System.out.println(countThirds);//printing number 100 for easier reading 
+		System.out.println(countThirds);
 		
-		while (countThirds-- > 0) {
-			if (countThirds % 3 == 0) {
+		while (countThirds > 0) {
+			if (countThirds == 1) {
+				System.out.println("0");
+				break;
+			} else {
+				countThirds -= 3;
 				System.out.println(countThirds);
 			}
 		}
+		System.out.println("");
 		
 		//a for loop that prints every other number from 0 to 100
 		System.out.println("THIRD LOOP");
 		
-		for (int x = 1; x < 100; x++) {
-			if (x % 2 == 1) {
-				System.out.println(x);
-			}
+		for (int x = 1; x < 100; x += 2) {
+			System.out.println(x);
 		}
+		System.out.println("");
 		
 		/* a for loop that prints every number from 0 - 100, 
 		 * if number is divisible by 3 prints hello instead of number

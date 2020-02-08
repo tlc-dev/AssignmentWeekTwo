@@ -13,18 +13,18 @@ public class weekTwo {
 			int thirstLevel = 4;
 			
 			
-			//Ice Cream and Swimming vars
+			//Ice Cream and Swimming
 			boolean shouldBuyIceCream = isHotOutside && hasMoneyInPocket; //ice cream
 			System.out.println("Should buy ice cream evals to: " + shouldBuyIceCream);
 			
 			boolean willGoSwimming = isHotOutside == true && isWeekday == false;
-			System.out.println("Should swim eval: " + willGoSwimming);
+			System.out.println("Should swim evaluates to: " + willGoSwimming);
 		
 			boolean isAGoodDay = isHotOutside && hasMoneyInPocket && isWeekday == false;
 			System.out.println("Is it a good day? " + isAGoodDay);
 			
 			boolean willBuyMilk = isHotOutside && thirstLevel >= 3 && (moneyInWallet == (costOfMilk * 2));
-			System.out.println("Will buy milk: " + willBuyMilk);
+			System.out.println("Will buy milk? " + willBuyMilk);
 	}
 
 }
